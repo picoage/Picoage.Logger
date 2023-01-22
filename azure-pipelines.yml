@@ -35,7 +35,7 @@ steps:
   displayName: Pack Nuget 
   inputs:
     command: pack
-    packagesToPack: 'src\Picoage.Logger\Picoage.Logger.csproj'
+    packagesToPack: 'Picoage.Logger.nuspec'
     packDestination: '$(Build.ArtifactStagingDirectory)'
 
 - task: NuGetCommand@2
