@@ -39,7 +39,7 @@ steps:
     packDestination: '$(Build.ArtifactStagingDirectory)'
 
 - task: NuGetCommand@2
-  displayName: PushNuget 
+  displayName: Push To Nuget.Org 
   inputs:
     command: 'push'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
