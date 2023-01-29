@@ -8,6 +8,11 @@
     </description>
       <authors>Vishnu - Picoage</authors>
     <license type="expression">Apache-2.0</license>
+      <!-- Dependencies are automatically installed when the package is installed -->
+        <dependencies>
+            <dependency id="Microsoft.Extensions.Logging.Abstractions" version="6.03" />
+            <dependency id="Microsoft.ApplicationInsights.AspNetCore" version="2.21.0" />
+        </dependencies>
        </metadata>
   <files>
     <file src="src\**\*.*" exclude="Src\**\bin\**\*.*;Src\**\obj\**\*.*" target="src" />
