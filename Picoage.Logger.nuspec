@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Picoage.Logger</id>
+    <version>1.0.0</version>
+    <description>
+      This package can be used to log structure logs to application insight.  
+    </description>
+      <authors>Vishnu - Picoage</authors>
+    <license type="expression">Apache-2.0</license>
+       </metadata>
+  <files>
+    <file src="src\**\*.*" exclude="Src\**\bin\**\*.*;Src\**\obj\**\*.*" target="src" />
+    <file src="README.md" target="" />
+  </files>  
+</package>
