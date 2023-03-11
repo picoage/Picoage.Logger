@@ -31,12 +31,12 @@ steps:
     configuration: '$(buildConfiguration)'
 
   
-- task: NuGetCommand@2
-  displayName: Pack Nuget 
-  inputs:
-    command: pack
-    packagesToPack: 'Picoage.Logger.nuspec'
-    packDestination: '$(Build.ArtifactStagingDirectory)'
+# - task: NuGetCommand@2
+#   displayName: Pack Nuget 
+#   inputs:
+#     command: pack
+#     packagesToPack: 'Picoage.Logger.nuspec'
+#     packDestination: '$(Build.ArtifactStagingDirectory)'
 
 - task: NuGetCommand@2
   displayName: Push To Nuget.Org 
